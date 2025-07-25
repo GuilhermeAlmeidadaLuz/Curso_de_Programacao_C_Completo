@@ -27,15 +27,16 @@ int main()
     // --------------------------------
     // outra forma:
     printf("\n");
-    a = ' ';
-    b = ' ';
+    // a = ' ';
+    // b = ' ';
 
     // buffer => \n
 
     printf("Digite uma letra: ");
+    // buffer => \n
     // buffer => \nletra3\n
 
-    scanf(" "); // tira um \n
+    scanf(" "); // tira-canecela-ignora um \n
 
     // buffer => letra3\n
     scanf("%c", &a); // atribui letra3 para variável
@@ -43,15 +44,16 @@ int main()
     // buffer -> \n
 
     printf("Digite uma letra: ");
+    // buffer => \n
     // buffer => \nletra4\n
 
     scanf(" "); // tira um \n
-
+    
     // buffer => letra4\n
     scanf("%c", &b); // atribui letra4 para variável
 
-    // buffer => \n
+    // buffer => \n     // se não houver \n no buffer do teclado, programa encerra antes de imprimir
     printf("Primeira letra: %c\nSegunda letra: %c\n", a, b);
-    
+
     return 0;
 }
